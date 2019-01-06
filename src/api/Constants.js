@@ -1,2 +1,1 @@
-export const API_URL = `https://some_dummy_url.com/`;
-
+export const API_URL='some_url';
