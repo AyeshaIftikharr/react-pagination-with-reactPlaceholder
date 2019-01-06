@@ -10,7 +10,7 @@ const parameters = (methodType = 'GET', data) => ({
 
 export default {
   getALLBookingsList: (data) => {
-    const url = `${c.API_URL}/${c.VERSION}/colleague/booking/list`;
+    const url = `${c.API_URL}/colleague/booking/list`;
     return fetch(url, parameters('POST', data))
       .then(response => response.json())
       .then(response => {

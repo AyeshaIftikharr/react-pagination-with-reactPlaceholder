@@ -21,16 +21,13 @@ const styles = theme => ({
 });
 
 class BookingPage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      bookingList: [],
-      page: 0,
-      rowsPerPage: 5,
-      count: 0,
-      isLoading: false,
-    };
-  }
+  state = {
+    bookingList: [],
+    page: 0,
+    rowsPerPage: 5,
+    count: 0,
+    isLoading: true,
+  };
 
   async componentDidMount() {
     const result = await this.getBookingList();
