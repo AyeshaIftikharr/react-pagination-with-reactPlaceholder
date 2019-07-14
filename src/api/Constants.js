@@ -1,1 +1,2 @@
-export const API_URL='some_url';
+export const API_URL = `qa-url/`;
+export const VERSION = `v1`;
